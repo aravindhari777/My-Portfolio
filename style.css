@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffe7e7;
+}
+
+header {
+    background-color: #130740;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-img {
+    width: 350px;
+    height: 500px;
+    border-radius: 80%;
+    object-fit: cover;
+}
+
+#about {
+    padding: 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    /* Centers the about section and adds top/bottom margin */
+    border-radius: 10px;
+    /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+#about h2 {
+    font-size: 25.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    /* Classic serif font for a timeless look */
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #000000;
+    line-height: 1.6;
+    font-style: italic;
+    /* Italicized text for a more personal touch */
+    font-family: 'Times New Roman', Times, serif;
+    /* A traditional serif font for the description */
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 20px;
+    }
+    #about h2 {
+        font-size: 2em;
+        /* Slightly smaller font for responsiveness */
+    }
+    #about p {
+        font-size: 1.1em;
+        /* Adjusts font size on smaller screens */
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #720808;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#about h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #031427;
+}
+
+#projects {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    /* Classic serif font for a timeless look */
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+    /* Aligns the content to the left */
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #890e0e;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    /* A modern sans-serif font for titles */
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #010101;
+    line-height: 1.6;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 90%;
+    }
+}
+
+#skills {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 1.5em;
+    color: #121111;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #7a060a;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.skill i {
+    font-size: 3em;
+    margin-bottom: 8px;
+}
+
+.skill span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    background-color: #000000;
+}
+
+#contact {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #650307;
+}
